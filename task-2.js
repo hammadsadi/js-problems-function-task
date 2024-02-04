@@ -1,5 +1,5 @@
 // You are given an array of numbers. Count how many times the a number is repeated in the array.
-let numbers = [5, 6, 11, 12, 98, 5];
+let numbers = [5, 6, 11, 12, 98, 5, 11];
 
 function countDuplicate(numbers) {
   let checkDuplicate = [];
@@ -12,7 +12,7 @@ function countDuplicate(numbers) {
       checkDuplicate.push(item);
     }
   }
-  return duplicateList;
+  return `Find ${duplicateList.join(",")}, Output: ${duplicateList.length}`;
 }
 
 console.log(countDuplicate(numbers));
